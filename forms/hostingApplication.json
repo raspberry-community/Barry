@@ -1,0 +1,71 @@
+{
+    "embed": {
+        "title": "Apply for Hosting",
+        "description": "To apply for free project hosting, please ensure you meet the requirement below. If you meet the requirements, please use the button below to apply.\n**REQUIREMENTS:**\n- Must be Open Source\n- Must agree to static code scanning\n- Must agree to dependency scanning\n- Must run in a Docker Container\n- If a web based project, must use or be willing to use Cloudflare",
+        "image": "https://avatars.githubusercontent.com/u/64516454",
+        "footer": "(C) 2024 Raspberry Pie",
+        "color": "#0000ff",
+        "buttons": [
+            {
+                "type": "primary",
+                "label": "Apply",
+                "customId": "apply-hosting-button"
+            }
+        ]
+    },
+    "modal": {
+        "title": "Apply for Hosting",
+        "customId": "apply-hosting-modal",
+        "inputs": [
+            {
+                "customId": "apply-hosting-projectURL",
+                "label": "GitHub Repository URL",
+                "placeholder": "",
+                "type": ""
+            },
+            {
+                "customId": "apply-hosting-projectDescription",
+                "label": "Project Description",
+                "placeholder": "Just a brief description of your project",
+                "type": ""
+            },
+            {
+                "customId": "apply-hosting-whyHosting",
+                "label": "Why should we host your project?",
+                "placeholder": "Why should we host this project for you?",
+                "type": ""
+            },
+            {
+                "customId": "apply-hosting-hostingType",
+                "label": "Hosting Type",
+                "type": "dropdown",
+                "options": [
+                    {
+                        "label": "Static Site",
+                        "value": "static"
+                    },
+                    {
+                        "label": "API",
+                        "value": "api"
+                    },
+                    {
+                        "label": "Web Application",
+                        "value": "webapp"
+                    },
+                    {
+                        "label": "Discord Bot",
+                        "value": "bot"
+                    },
+                    {
+                        "label": "Other",
+                        "value": "other"
+                    }
+                ]
+            }
+        ]
+    },
+    "postChannel": "",
+    "ticketChannel": "",
+    "ticketCategory": "",
+    "rolesToPing": [""]
+}

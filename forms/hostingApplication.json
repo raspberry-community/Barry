@@ -1,9 +1,13 @@
 {
     "embed": {
         "title": "Apply for Hosting",
-        "description": "To apply for free project hosting, please ensure you meet the requirement below. If you meet the requirements, please use the button below to apply.\n**REQUIREMENTS:**\n- Must be Open Source\n- Must agree to static code scanning\n- Must agree to dependency scanning\n- Must run in a Docker Container\n- If a web based project, must use or be willing to use Cloudflare",
+        "description": "To apply for free project hosting, please ensure you meet the requirement below. If you meet the requirements, please use the button below to apply.\n**REQUIREMENTS:**\n- Must be Open Source\n- Must have a permissive license\n- Codebase must be on GitHub\n- Must agree to static code scanning\n- Must agree to dependency scanning\n- Must run in a Docker Container\n- If a web based project, must use or be willing to use Cloudflare",
         "image": "https://avatars.githubusercontent.com/u/64516454",
-        "footer": "(C) 2024 Raspberry Pie",
+        "footer": {
+            "text": "(C) 2024 Raspberry Pie",
+            "icon_url": "https://avatars.githubusercontent.com/u/64516454",
+            "url": "https://github.com/raspberry-pie-community"
+        },
         "color": "#0000ff",
         "buttons": [
             {
@@ -64,7 +68,7 @@
             }
         ]
     },
-    "postChannel": "",
+    "postChannel": "1242216295143837696",
     "ticketChannel": "",
     "ticketCategory": "",
     "rolesToPing": [""]

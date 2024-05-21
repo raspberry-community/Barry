@@ -99,11 +99,30 @@ async function generateFormEmbeds(readyClient, form) {
   if (form.embed.buttons) {
     for (const button of form.embed.buttons) {
       const buttonBuilder = new ButtonBuilder()
-        .setCustomId(button.customId)
-        .setLabel(button.label)
-        .setStyle(
-          ButtonStyle[button.style.toUpperCase()] || ButtonStyle.Primary
-        );
+        .setLabel(button.label);
+
+      switch(button.style.toUpperCase()) {
+        case "LINK":
+          buttonBuilder.setStyle(ButtonStyle.Link);
+          break;
+        case "PRIMARY":
+          buttonBuilder.setStyle(ButtonStyle.Primary);
+          buttonBuilder.setCustomId(button.customId);
+          break;
+        case "SECONDARY":
+          buttonBuilder.setStyle(ButtonStyle.Secondary);
+          buttonBuilder.setCustomId(button.customId);
+          break;
+        case "SUCCESS":
+          buttonBuilder.setStyle(ButtonStyle.Success);
+          buttonBuilder.setCustomId(button.customId);
+          break;
+        case "DANGER":
+          buttonBuilder.setStyle(ButtonStyle.Danger);
+          buttonBuilder.setCustomId(button.customId);
+          break;
+        default: "PRIMARY";
+      }
 
       if (button.url) buttonBuilder.setURL(button.url);
       actionRow.addComponents(buttonBuilder);

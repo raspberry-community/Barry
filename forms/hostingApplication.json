@@ -1,7 +1,7 @@
 {
     "embed": {
         "title": "Apply for Hosting",
-        "description": "To apply for free project hosting, please ensure you meet the requirement below. If you meet the requirements, please use the button below to apply.\n**REQUIREMENTS:**\n- Must be Open Source\n- Must have a permissive license\n- Codebase must be on GitHub\n- Must agree to static code scanning\n- Must agree to dependency scanning\n- Must run in a Docker Container\n- If a web based project, must use or be willing to use Cloudflare",
+        "description": "To apply for free project hosting, please ensure you meet the requirement below. If you meet the requirements, please use the button below to apply.\n**REQUIREMENTS:**\n- Must be Open Source\n- Must have a permissive license\n- Codebase must be on GitHub\n- Must agree to static code scanning\n- Must agree to dependency scanning\n- Must run in a Docker Container\n- If a web based project, must use or be willing to use Cloudflare\n\n **BY FILLING OUT THIS FORM YOU AGREE TO OUR PRIVACY POLICY LINKED BELOW**",
         "image": "https://avatars.githubusercontent.com/u/64516454",
         "footer": {
             "text": "(C) 2024 Raspberry Pie",
@@ -14,6 +14,12 @@
                 "style": "primary",
                 "label": "Apply",
                 "customId": "apply-hosting-button"
+            },
+            {
+                "style": "link",
+                "label": "Privacy Policy",
+                "url": "https://burntrouter.info/raspberry-privacy.html",
+                "customId": "privacy-policy-button"
             }
         ]
     },
@@ -45,6 +51,13 @@
                 "label": "Hosting Type",
                 "type": "ShortText",
                 "placeholder": "Static Site, API, Web Application, Discord Bot, Other"
+            },
+            {
+                "customId": "apply-hosting-privacyPolicy",
+                "label": "Privacy Policy (Must Type `I agree`)",
+                "type": "ShortText",
+                "placeholder": "I agree"
+
             }
         ],
         "buttons": [

@@ -11,7 +11,7 @@
         "color": "#0000ff",
         "buttons": [
             {
-                "type": "primary",
+                "style": "primary",
                 "label": "Apply",
                 "customId": "apply-hosting-button"
             }
@@ -19,57 +19,45 @@
     },
     "modal": {
         "title": "Apply for Hosting",
+        "callerId": "apply-hosting-button",
         "customId": "apply-hosting-modal",
         "inputs": [
             {
                 "customId": "apply-hosting-projectURL",
                 "label": "GitHub Repository URL",
                 "placeholder": "",
-                "type": ""
+                "type": "ShortText"
             },
             {
                 "customId": "apply-hosting-projectDescription",
                 "label": "Project Description",
                 "placeholder": "Just a brief description of your project",
-                "type": ""
+                "type": "LongText"
             },
             {
                 "customId": "apply-hosting-whyHosting",
                 "label": "Why should we host your project?",
                 "placeholder": "Why should we host this project for you?",
-                "type": ""
+                "type": "LongText"
             },
             {
                 "customId": "apply-hosting-hostingType",
                 "label": "Hosting Type",
-                "type": "dropdown",
-                "options": [
-                    {
-                        "label": "Static Site",
-                        "value": "static"
-                    },
-                    {
-                        "label": "API",
-                        "value": "api"
-                    },
-                    {
-                        "label": "Web Application",
-                        "value": "webapp"
-                    },
-                    {
-                        "label": "Discord Bot",
-                        "value": "bot"
-                    },
-                    {
-                        "label": "Other",
-                        "value": "other"
-                    }
-                ]
+                "type": "ShortText",
+                "placeholder": "Static Site, API, Web Application, Discord Bot, Other"
+            }
+        ],
+        "buttons": [
+            {
+                "style": "success",
+                "label": "Open Ticket",
+                "customId": "hosting-open-button"
             }
         ]
     },
-    "postChannel": "1242216295143837696",
-    "ticketChannel": "",
-    "ticketCategory": "",
-    "rolesToPing": [""]
+    "postChannel": "1242278580566622278",
+    "ticketChannel": "1242277015458021458",
+    "ticketCategory": "1242277139483594762",
+    "transcriptChannel": "1242303276536430683",
+    "rolesToPing": ["1242216327892963348"]
 }
